@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   targetNamespace="http://www.mojtyp.pl"
+           xmlns:moj="http://www.mojtyp.pl" 
+           elementFormDefault="qualified">
+	<xs:element name="watchingLibrary"  >
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="authors"  >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="author" type="xs:token" maxOccurs="2"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="description" type="xs:string" />
+				
+				<xs:element name="types">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="type" maxOccurs="unbounded" >
+							  <xs:complexType>
+								<xs:simpleContent>
+								  <xs:extension base="moj:typeType">
+									<xs:attribute name="type_id" type="xs:token" default="movie" />
+								  </xs:extension>
+								</xs:simpleContent>
+							  </xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="genres" type="moj:genreType" />
+				
+				<xs:element name="countries" type="moj:countryType" />
+
+				<xs:element name="list" type="moj:listType" />
+
+				<xs:element name="footer" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+		
+		<xs:keyref name="genre_keyref" refer="moj:genre_key">
+			<xs:selector xpath="list/item" />
+			<xs:field xpath="@genre_idref" />
+		</xs:keyref>
+					
+		<xs:keyref name="country_keyref" refer="moj:country_key">
+			<xs:selector xpath="list/item" />
+			<xs:field xpath="@c_idref" />
+		</xs:keyref>
+		
+		<xs:unique name="unique_no_key">
+			<xs:selector xpath="moj:watchingLibrary/moj:list/moj:item" />
+			<xs:field xpath="@no" />
+		</xs:unique>
+		
+		<xs:key name="genre_key">
+			<xs:selector xpath="moj:genres/moj:genre" />
+			<xs:field xpath="@genre_id" />
+		</xs:key>
+		
+		<xs:key name="country_key">
+			<xs:selector xpath="moj:countries/moj:country" />
+			<xs:field xpath="@c_id" />
+		</xs:key>
+		
+	</xs:element>
+	
+	<xs:complexType name="listType">
+		<xs:sequence>
+			<xs:element name="item" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="moj:itemType">
+							<xs:attribute name="no" type="xs:token" />
+						   <xs:attribute name="genre_idref" type="xs:token"/>
+						   <xs:attribute name="c_idref" type="xs:token"/>
+						   <xs:attribute name="type_id" type="xs:token"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:group name="movieGroup" >
+		<xs:sequence>
+						<xs:element name="m_title" type="moj:titleType" />
+						<xs:element name="release" type="xs:date" />
+						<xs:element name="creator" type="xs:string" />
+						<xs:element name="ageLimit" type="moj:ageLimitType" />
+						<xs:element name="awards" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="wins" type="xs:integer" />
+									<xs:element name="nominations" type="xs:integer" />
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="rate" type="moj:rateType" />
+						<xs:element name="time" type="xs:duration" />
+					</xs:sequence>
+	</xs:group>
+	
+	<xs:group name="seriesGroup">
+		<xs:sequence>
+						<xs:element name="title" type="moj:titleType" />
+						<xs:element name="year" type="xs:gYear" />
+						<xs:element name="creator" type="xs:string" />
+						<xs:element name="parts">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="seasons" type="xs:integer" />
+									<xs:element name="episodes" type="xs:integer" />
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="ageLimit" type="moj:ageLimitType" />
+						<xs:element name="series_awards">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="wins" type="xs:integer" />
+									<xs:element name="nominations" type="xs:integer" />
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="rate" type="moj:rateType" />
+					</xs:sequence>
+	</xs:group>
+	
+	<xs:complexType name="itemType">
+		<xs:choice>
+			<xs:group ref="moj:movieGroup"/>
+			<xs:group ref="moj:seriesGroup"/>
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:complexType name="genreType">
+		<xs:sequence>
+			<xs:element name="genre" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:token">
+							<xs:attribute name="genre_id" type="xs:token"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="countryType">
+		<xs:sequence>
+			<xs:element name="country" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:token">
+							<xs:attribute name="c_id" type="xs:token"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:simpleType name="typeType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Movies" />
+			<xs:enumeration value="Series" />
+            <xs:pattern value="[a-zA-Z]{6}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="titleType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="2" />
+			<xs:maxLength value="40" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="ageLimitType">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0" />
+			<xs:maxInclusive value="17" />
+			 <xs:pattern value="([0-9])*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="rateType">
+		<xs:restriction base="xs:float">
+			<xs:minInclusive value="1" />
+			<xs:maxInclusive value="10" />
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<moj:watchingLibrary
+	xmlns:moj="http://www.mojtyp.pl"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mojtyp.pl schema.xsd ">
+	
+	<moj:authors>
+		<moj:author>Paulina Gałan</moj:author>
+		<moj:author>Aleksandra Wnuk</moj:author>
+	</moj:authors>
+	<moj:description>
+		Chosen movies and series with their parameters
+	</moj:description>
+	<moj:types>
+		<moj:type type_id = "movie" >Movies</moj:type>
+		<moj:type type_id = "series" >Series</moj:type>
+	</moj:types>
+	<moj:genres>
+		<moj:genre genre_id = "g01">Animation</moj:genre>
+		<moj:genre genre_id = "g02">Drama</moj:genre>
+		<moj:genre genre_id = "g03">Music</moj:genre>
+		<moj:genre genre_id = "g04">Comedy</moj:genre>
+		<moj:genre genre_id = "g05">Musical</moj:genre>
+		<moj:genre genre_id = "g06">Sci-Fi</moj:genre>
+		<moj:genre genre_id = "g07">Fantasy</moj:genre>
+		<moj:genre genre_id = "g08">Crime</moj:genre>
+		<moj:genre genre_id = "g09">War</moj:genre>
+		<moj:genre genre_id = "g10">Action</moj:genre>
+		<moj:genre genre_id = "g11">Horror</moj:genre>
+	</moj:genres>
+	<moj:countries>
+		<moj:country c_id = "c01">Japan</moj:country>
+		<moj:country c_id = "c02">UK</moj:country>
+		<moj:country c_id = "c03">Ireland</moj:country>
+		<moj:country c_id = "c04">USA</moj:country>
+		<moj:country c_id = "c05">Canada</moj:country>
+		<moj:country c_id = "c06">Poland</moj:country>
+		<moj:country c_id = "c07">Colombia</moj:country>
+		<moj:country c_id = "c08">Brazil</moj:country>
+	</moj:countries>
+	<moj:list>
+		<moj:item no="m01" type_id = "movie" genre_idref = "g01" c_idref ="c01">
+			<moj:m_title>Kimi no na wa.</moj:m_title>
+			<moj:release>2016-08-26</moj:release> 
+			<moj:creator>Makoto Shinkai</moj:creator>
+			<moj:ageLimit>12</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>14</moj:wins>
+				<moj:nominations>22</moj:nominations>
+			</moj:awards>
+			<moj:rate>8.3</moj:rate>
+			<moj:time>PT1H46M</moj:time>
+		</moj:item>
+		<moj:item no="m02" type_id = "movie" genre_idref = "g02" c_idref ="c02">
+			<moj:m_title>Perfect Sense</moj:m_title>
+			<moj:release>2011-01-24</moj:release> 
+			<moj:creator>David Mackenzie</moj:creator>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>3</moj:wins>
+				<moj:nominations>3</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.1</moj:rate>
+			<moj:time>PT1H32M</moj:time>
+		</moj:item>
+		<moj:item no="m03" type_id = "movie" genre_idref = "g03" c_idref ="c03">
+			<moj:m_title>Sing Street</moj:m_title>
+			<moj:release>2016-03-17</moj:release> 
+			<moj:creator>John Carney</moj:creator>
+			<moj:ageLimit>13</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>13</moj:wins>
+				<moj:nominations>39</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.5</moj:rate>
+			<moj:time>PT1H46M</moj:time>
+		</moj:item>
+		<moj:item no="m04" type_id = "movie" genre_idref = "g04" c_idref ="c04">
+			<moj:m_title>How to Talk to Girls at Parties</moj:m_title>
+			<moj:release>2017-05-21</moj:release> 
+			<moj:creator>John Cameron Mitchell</moj:creator>
+			<moj:ageLimit>17</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>0</moj:wins>
+				<moj:nominations>6</moj:nominations>
+			</moj:awards>
+			<moj:rate>6.2</moj:rate>
+			<moj:time>PT1H42M</moj:time>
+		</moj:item>
+		<moj:item no="m05" type_id = "movie" genre_idref = "g05" c_idref ="c04">
+			<moj:m_title>The Greatest Showman</moj:m_title>
+			<moj:release>2017-12-20</moj:release> 
+			<moj:creator>Michael Gracey</moj:creator>
+			<moj:ageLimit>10</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>14</moj:wins>
+				<moj:nominations>28</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.7</moj:rate>
+			<moj:time>PT1H45M</moj:time>
+		</moj:item>
+		<moj:item no="m06" type_id = "movie" genre_idref = "g01" c_idref ="c04">
+			<moj:m_title>Fantastic Mr. Fox</moj:m_title>
+			<moj:release>2009-10-14</moj:release> 
+			<moj:creator>Wes Anderson</moj:creator>
+			<moj:ageLimit>7</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>32</moj:wins>
+				<moj:nominations>62</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.5</moj:rate>
+			<moj:time>PT1H27M</moj:time>
+		</moj:item>
+		<moj:item no="m07" type_id = "movie" genre_idref = "g01" c_idref ="c04">
+			<moj:m_title>Isle of Dogs</moj:m_title>
+			<moj:release>2018-02-15</moj:release> 
+			<moj:creator>Wes Anderson</moj:creator>
+			<moj:ageLimit>11</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>7</moj:wins>
+				<moj:nominations>5</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.9</moj:rate>
+			<moj:time>PT1H41M</moj:time>
+		</moj:item>
+		<moj:item no="m08" type_id = "movie" genre_idref = "g04" c_idref ="c04">
+			<moj:m_title>Beetlejuice</moj:m_title>
+			<moj:release>1988-03-30</moj:release> 
+			<moj:creator>Tim Burton</moj:creator>
+			<moj:ageLimit>13</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>7</moj:wins>
+				<moj:nominations>11</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.2</moj:rate>
+			<moj:time>PT1H32M</moj:time>
+		</moj:item>
+		<moj:item no="m09" type_id = "movie" genre_idref = "g01" c_idref ="c01">
+			<moj:m_title>Neko no ongaeshi</moj:m_title>
+			<moj:release>2002-07-19</moj:release>  
+			<moj:creator>Hiroyuki Morita</moj:creator>
+			<moj:ageLimit>10</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>0</moj:wins>
+				<moj:nominations>1</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.3</moj:rate>
+			<moj:time>PT1H15M</moj:time>
+		</moj:item>
+		<moj:item no="m10" type_id = "movie" genre_idref = "g01" c_idref ="c04">
+			<moj:m_title>Corpse Bride</moj:m_title>
+			<moj:release>2005-09-07</moj:release> 
+			<moj:creator>Tim Burton</moj:creator>
+			<moj:ageLimit>10</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>9</moj:wins>
+				<moj:nominations>29</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.5</moj:rate>
+			<moj:time>PT1H17M</moj:time>
+		</moj:item>
+		<moj:item no="m11" type_id = "movie" genre_idref = "g02" c_idref ="c04">
+			<moj:m_title>Phantom Thread</moj:m_title>
+			<moj:release>2017-12-11</moj:release> 
+			<moj:creator>Paul Thomas Anderson</moj:creator>
+			<moj:ageLimit>15</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>49</moj:wins>
+				<moj:nominations>94</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.0</moj:rate>
+			<moj:time>PT2H10M</moj:time>
+		</moj:item>
+		<moj:item no="m12" type_id = "movie" genre_idref = "g05" c_idref ="c04">
+			<moj:m_title>The Phantom of the Opera</moj:m_title>
+			<moj:release>2004-12-09</moj:release> 
+			<moj:creator>Joel Schumacher</moj:creator>
+			<moj:ageLimit>13</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>7</moj:wins>
+				<moj:nominations>42</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.6</moj:rate>
+			<moj:time>PT2H23M</moj:time>
+		</moj:item>
+		<moj:item no="m13" type_id = "movie" genre_idref = "g05" c_idref ="c04">
+			<moj:m_title>Top Hat</moj:m_title>
+			<moj:release>1935-09-06</moj:release> 
+			<moj:creator>Mark Sandrich</moj:creator>
+			<moj:ageLimit>12</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>2</moj:wins>
+				<moj:nominations>6</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.8</moj:rate>
+			<moj:time>PT1H41M</moj:time>
+		</moj:item>
+		<moj:item no="m14" type_id = "movie" genre_idref = "g01" c_idref ="c04">
+			<moj:m_title>Pocahontas</moj:m_title>
+			<moj:release>1995-06-15</moj:release> 
+			<moj:creator>Eric Goldberg, Mike Gabriel</moj:creator>
+			<moj:ageLimit>6</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>15</moj:wins>
+				<moj:nominations>6</moj:nominations>
+			</moj:awards>
+			<moj:rate>7.5</moj:rate>
+			<moj:time>PT1H21M</moj:time>
+		</moj:item>
+		<moj:item no="m15" type_id = "movie" genre_idref = "g06" c_idref ="c04">
+			<moj:m_title>Annihilation</moj:m_title>
+			<moj:release>2018-02-22</moj:release> 
+			<moj:creator>Alex Garland</moj:creator>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:awards>
+				<moj:wins>0</moj:wins>
+				<moj:nominations>8</moj:nominations>
+			</moj:awards>
+			<moj:rate>6.1</moj:rate>
+			<moj:time>PT1H55M</moj:time>
+		</moj:item>
+		<moj:item no="s01" type_id = "series" genre_idref = "g02" c_idref ="c05">
+			<moj:title>Anne with an 'E'</moj:title>
+			<moj:year>2017</moj:year>
+			<moj:creator>Moira Walley-Beckett</moj:creator>
+			<moj:parts>
+				<moj:seasons>2</moj:seasons>
+				<moj:episodes>17</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>7</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>5</moj:wins>
+				<moj:nominations>12</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>8.1</moj:rate>
+		</moj:item>
+		<moj:item no="s02" type_id = "series" genre_idref = "g08" c_idref ="c04">
+			<moj:title>Breaking Bad</moj:title>
+			<moj:year>2008</moj:year>
+			<moj:creator>Vince Gilligan</moj:creator>
+			<moj:parts>
+				<moj:seasons>5</moj:seasons>
+				<moj:episodes>62</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>147</moj:wins>
+				<moj:nominations>227</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>8.8</moj:rate>
+		</moj:item>
+		<moj:item no="s03" type_id = "series" genre_idref = "g07" c_idref ="c04">
+			<moj:title>Game of Thrones</moj:title>
+			<moj:year>2011</moj:year>
+			<moj:creator>David Benioff, D.B. Weiss</moj:creator>
+			<moj:parts>
+				<moj:seasons>7</moj:seasons>
+				<moj:episodes>73</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>296</moj:wins>
+				<moj:nominations>496</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>8.9</moj:rate>
+		</moj:item>
+		<moj:item no="s04" type_id = "series" genre_idref = "g09" c_idref ="c06">
+			<moj:title>Misja Afganistan</moj:title>
+			<moj:year>2012</moj:year>
+			<moj:creator>Maciej Dejczer</moj:creator>
+			<moj:parts>
+				<moj:seasons>1</moj:seasons>
+				<moj:episodes>13</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>0</moj:wins>
+				<moj:nominations>0</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>7.3</moj:rate>
+		</moj:item>
+		<moj:item no="s05" type_id = "series" genre_idref = "g10" c_idref ="c02">
+			<moj:title>Vikings</moj:title>
+			<moj:year>2013</moj:year>
+			<moj:creator>Michael Hirst</moj:creator>
+			<moj:parts>
+				<moj:seasons>5</moj:seasons>
+				<moj:episodes>90</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>27</moj:wins>
+				<moj:nominations>91</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>8.5</moj:rate>
+		</moj:item>
+		<moj:item no="s06" type_id = "series" genre_idref = "g06" c_idref ="c04">
+			<moj:title>Sense8</moj:title>
+			<moj:year>2015</moj:year>
+			<moj:creator>J. Michael Straczynski, Lana Wachowski, Lilly Wachowski</moj:creator>
+			<moj:parts>
+				<moj:seasons>2</moj:seasons>
+				<moj:episodes>24</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>2</moj:wins>
+				<moj:nominations>10</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>8.0</moj:rate>
+		</moj:item>
+		<moj:item no="s07" type_id = "series" genre_idref = "g07" c_idref ="c04">
+			<moj:title>Shadowhunters</moj:title>
+			<moj:year>2016</moj:year>
+			<moj:creator>Ed Decter</moj:creator>
+			<moj:parts>
+				<moj:seasons>3</moj:seasons>
+				<moj:episodes>55</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>7</moj:wins>
+				<moj:nominations>15</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>6.4</moj:rate>
+		</moj:item>
+		<moj:item no="s08" type_id = "series" genre_idref = "g08" c_idref ="c07">
+			<moj:title>Narcos</moj:title>
+			<moj:year>2015</moj:year>
+			<moj:creator>Carlo Bernard, Chris Brancato, Doug Miro</moj:creator>
+			<moj:parts>
+				<moj:seasons>3</moj:seasons>
+				<moj:episodes>30</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>7</moj:wins>
+				<moj:nominations>17</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>8.6</moj:rate>
+		</moj:item>
+		<moj:item no="s09" type_id = "series" genre_idref = "g02" c_idref ="c04">
+			<moj:title>Dr House</moj:title>
+			<moj:year>2004</moj:year>
+			<moj:creator>David Shore</moj:creator>
+			<moj:parts>
+				<moj:seasons>8</moj:seasons>
+				<moj:episodes>176</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>14</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>56</moj:wins>
+				<moj:nominations>131</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>8.2</moj:rate>
+		</moj:item>
+		<moj:item no="s10" type_id = "series" genre_idref = "g04" c_idref ="c04">
+			<moj:title>Friends</moj:title>
+			<moj:year>1994</moj:year>
+			<moj:creator>David Crane, Marta Kauffman</moj:creator>
+			<moj:parts>
+				<moj:seasons>10</moj:seasons>
+				<moj:episodes>236</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>14</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>70</moj:wins>
+				<moj:nominations>211</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>8.2</moj:rate>
+		</moj:item>
+		<moj:item no="s11" type_id = "series" genre_idref = "g04" c_idref ="c04">
+			<moj:title>Married with Children</moj:title>
+			<moj:year>1986</moj:year>
+			<moj:creator>Ron Leavitt, Michael G. Moye</moj:creator>
+			<moj:parts>
+				<moj:seasons>11</moj:seasons>
+				<moj:episodes>263</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>15</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>6</moj:wins>
+				<moj:nominations>29</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>6.6</moj:rate>
+		</moj:item>
+		<moj:item no="s12" type_id = "series" genre_idref = "g06" c_idref ="c08">
+			<moj:title>3%</moj:title>
+			<moj:year>2016</moj:year>
+			<moj:creator>Pedro Aguilera</moj:creator>
+			<moj:parts>
+				<moj:seasons>2</moj:seasons>
+				<moj:episodes>20</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>15</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>0</moj:wins>
+				<moj:nominations>1</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>7.1</moj:rate>
+		</moj:item>
+		<moj:item no="s13" type_id = "series" genre_idref = "g06" c_idref ="c04">
+			<moj:title>The 100</moj:title>
+			<moj:year>2014</moj:year>
+			<moj:creator>Jason Rothenberg</moj:creator>
+			<moj:parts>
+				<moj:seasons>5</moj:seasons>
+				<moj:episodes>73</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>4</moj:wins>
+				<moj:nominations>29</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>7.7</moj:rate>
+		</moj:item>
+		<moj:item no="s14" type_id = "series" genre_idref = "g07" c_idref ="c04">
+			<moj:title>The Vampire Diaries</moj:title>
+			<moj:year>2009</moj:year>
+			<moj:creator>Julie Plec, Kevin Williamson</moj:creator>
+			<moj:parts>
+				<moj:seasons>8</moj:seasons>
+				<moj:episodes>171</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>36</moj:wins>
+				<moj:nominations>66</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>7.7</moj:rate>
+		</moj:item>
+		<moj:item no="s15" type_id = "series" genre_idref = "g11" c_idref ="c04">
+			<moj:title>The Walking Dead</moj:title>
+			<moj:year>2010</moj:year>
+			<moj:creator>Frank Darabont, Angela Kang</moj:creator>
+			<moj:parts>
+				<moj:seasons>8</moj:seasons>
+				<moj:episodes>131</moj:episodes>
+			</moj:parts>
+			<moj:ageLimit>16</moj:ageLimit>
+			<moj:series_awards>
+				<moj:wins>70</moj:wins>
+				<moj:nominations>190</moj:nominations>
+			</moj:series_awards>
+			<moj:rate>7.9</moj:rate>
+		</moj:item>
+	</moj:list>
+	<moj:footer>Created in 2018</moj:footer>
+</moj:watchingLibrary>
